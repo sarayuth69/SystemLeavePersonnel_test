@@ -65,7 +65,7 @@ export class EmployeestatusComponent implements OnInit {
       );
       Swal.fire({
         position: 'center',
-        type: 'success',
+        icon: 'success',
         title: 'เพิ่มสถานะบุคลากรเรียบร้อย',
         showConfirmButton: false,
         timer: 1500
@@ -112,7 +112,7 @@ export class EmployeestatusComponent implements OnInit {
       );
       Swal.fire({
         position: 'center',
-        type: 'success',
+        icon: 'success',
         title: 'แก้ไขเรียบร้อย',
         showConfirmButton: false,
         timer: 1500
@@ -143,7 +143,7 @@ export class EmployeestatusComponent implements OnInit {
       if (result.value) {
         Swal.fire({
           position: 'center',
-          type: 'success',
+          icon: 'success',
           title: 'ลบเรียบร้อย',
           showConfirmButton: false,
           timer: 1500

@@ -206,7 +206,7 @@ export class EmployeeshowComponent implements OnInit {
       );
       Swal.fire({
         position: 'center',
-        type: 'success',
+        icon: 'success',
         title: 'แก้ไขเรียบร้อย',
         showConfirmButton: false,
         timer: 1500
@@ -231,7 +231,7 @@ export class EmployeeshowComponent implements OnInit {
     
     Swal.fire({
       title: 'คุณจะลบ'+' '+this.EmpName_show+' '+'หรือไม่' ,
-      type: 'warning',
+      icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#00FF33',
       cancelButtonColor: '#d33',
@@ -240,7 +240,7 @@ export class EmployeeshowComponent implements OnInit {
       if (result.value) {
         Swal.fire({
           position: 'center',
-          type: 'success',
+          icon: 'success',
           title: 'ลบเรียบร้อย',
           showConfirmButton: false,
           timer: 1500
@@ -289,7 +289,7 @@ export class EmployeeshowComponent implements OnInit {
   getsearch(Emp_ID) {
     if(this.Emp_ID.value.length === "0"){
       Swal.fire({
-        type: 'error',
+        icon: 'error',
         title: 'ไม่พบข้อมูล',
         text: 'Something went wrong!'
       })
@@ -306,32 +306,6 @@ export class EmployeeshowComponent implements OnInit {
     }
    
   }
-
-//   click(Empstatus_ID){
-//     this.EmpLtype_show = Empstatus_ID
-//     console.log(this.EmpLtype_show);
-//     if(this.EmpLtype_show ==="104"){
-//       this.http.get('http://localhost/Leavewebservice/API/getLtype_EI_admin.php').subscribe(
-//       (data : any)=>{
-//         this.leavetype = data;
-//       },
-//       (error:any)=>{
-//         console.log(error);
-//       }
-//     )
-//     }else if(this.EmpLtype_show==="105"){
-//       this.http.get('http://localhost/Leavewebservice/API/getLtype_US_admin.php').subscribe(
-//         (data : any)=>{
-//           this.leavetype = data;
-//         },
-//         (error:any)=>{
-//           console.log(error);
-//         }
-//       )
-//   }
-
-// }
-
 
 AddLeave(){
   const body = 'Leave_ID=' + this.Leave_ID.value
@@ -367,7 +341,7 @@ AddLeave(){
     );
     Swal.fire({
       position: 'top-end',
-      type: 'success',
+      icon: 'success',
       title: 'ส่งการลาเรียบร้อย',
       showConfirmButton: false,
       timer: 1500

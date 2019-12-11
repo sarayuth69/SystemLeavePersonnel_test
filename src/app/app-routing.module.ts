@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: "employee", loadChildren: "./employee/employee.module#EmployeeModule" },
   { path: "leavelist", loadChildren: "./leavelist/leavelist.module#LeavelistModule" },
   { path: "leave", loadChildren: "./leave/leave.module#LeaveModule" },
+  { path: "text", loadChildren: "./text/text.module#TextModule" },
   //{ path: "seach", loadChildren: "./seach/seach.module#SeachModule" },
   //{ path: "checkleave", loadChildren: "./checkleave/checkleave.module#CheckleaveModule" },
   { path: "**", redirectTo: "/login" },
